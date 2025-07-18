@@ -1,0 +1,116 @@
+body{
+	background: #000;
+	font-size: 20px;
+	line-height: 1.25;
+	font-family: 'Montserrat';
+	color: #fff;
+}
+
+img{
+	max-width: 100%;
+}
+
+.o-container{
+	max-width: 1200px;
+	margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.o-btn{
+	background: #fff;
+	color: #000;
+	text-decoration: none;
+	display: block;
+	width: max-content;
+	padding: 10px 50px;
+	border-radius: 8px;
+	font-weight: 500;
+	margin: 40px auto 10px;
+	border: 1px solid #fff;
+	transition: 0.4s all ease;
+	overflow: hidden;
+	position: relative;
+}
+
+.o-btn span{
+	transition: 0.4s all ease;
+}
+
+
+.o-btn:after{
+	content: '';
+	width: 25px;
+	height: 9px;
+	border-left: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+	position: absolute;
+	top: -38px;
+	left: 50%;
+	transform: rotate(-45deg) translateX(-50%);
+	display: block;
+	transition: 0.4s all ease;
+}
+
+.o-btn:hover{
+	background: #000;
+	color: #fff;
+}
+
+.o-btn.is-copied{
+	background: #008000;
+	color: #fff;
+	border-color: #008000;
+}
+
+.o-btn.is-copied:after{
+	top: 0px;
+}
+
+.o-btn span{
+	position: relative;
+}
+
+.o-btn.is-copied span{
+	top: 100px;
+}
+	
+
+.c-card{
+	border: 2px solid #fff;
+	border-radius: 24px;
+	margin: 0 auto;
+	width:90%;
+	box-sizing: border-box;
+	padding: 0;
+	overflow: hidden;
+	max-width: 380px;
+}
+
+.c-card__logo{
+	font-size: 0;
+}
+
+.c-card__logo img{
+	width: 100%;
+}
+
+.c-card__info{
+	padding: 20px;
+	text-align: center;
+}
+
+.c-card__info h1{
+	font-size: 42px;
+	margin: 0
+}
+
+.c-card__info p strong{
+	display: block;
+	font-weight: 600;
+}
+
